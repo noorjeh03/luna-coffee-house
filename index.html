@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luna Coffee House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Luna Coffee House home">
+      <img src="assets/luna-logo.png" alt="Luna Coffee House logo" />
+      <span>Luna Coffee House</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#menu">Menu</a>
+      <a href="#space">The Space</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <a class="nav-cta" href="#visit">Reserve</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <div class="hero-brand-intro">
+          <img src="assets/luna-logo.png" alt="Luna Coffee House logo" />
+          <div>
+            <span>Luna Coffee House</span>
+            <small>Specialty coffee · desserts · brunch</small>
+          </div>
+        </div>
+        <p class="eyebrow">Moon-brewed coffee · Amman</p>
+        <h1>Coffee for slow mornings and golden nights.</h1>
+        <p class="hero-text">
+          Luna Coffee House is a warm specialty café serving espresso, iced blends,
+          desserts, and brunch in a cozy moonlit space.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn primary">Explore Menu</a>
+          <a href="#space" class="btn ghost">See the Space</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-strip" aria-label="Highlights">
+      <div>
+        <strong>Specialty Coffee</strong>
+        <span>Single origin beans & signature blends</span>
+      </div>
+      <div>
+        <strong>Desserts</strong>
+        <span>Fresh cakes, croissants & seasonal sweets</span>
+      </div>
+      <div>
+        <strong>Cozy Nights</strong>
+        <span>Warm lights, calm music & terrace seating</span>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="section-heading">
+        <p class="eyebrow">The menu</p>
+        <h2>Flip through our little coffee book.</h2>
+        <p>
+          A tactile menu experience inspired by a café notebook — simple, warm,
+          and easy to browse.
+        </p>
+      </div>
+
+      <div class="menu-book-wrap">
+        <button class="book-btn" id="prevPage" aria-label="Previous menu page">‹</button>
+
+        <div class="book" id="book" aria-live="polite">
+          <div class="page left-page">
+            <p class="page-kicker">Luna Coffee House</p>
+            <h3 id="leftTitle">Signature Coffee</h3>
+            <ul id="leftItems"></ul>
+          </div>
+          <div class="page right-page">
+            <p class="page-kicker" id="pageNumber">01 / 04</p>
+            <h3 id="rightTitle">Iced & Cold</h3>
+            <ul id="rightItems"></ul>
+          </div>
+        </div>
+
+        <button class="book-btn" id="nextPage" aria-label="Next menu page">›</button>
+      </div>
+    </section>
+
+    <section id="space" class="section space-section">
+      <div class="section-heading">
+        <p class="eyebrow">The space</p>
+        <h2>Designed for quiet talks, laptop days, and after-sunset coffee.</h2>
+      </div>
+
+      <div class="gallery">
+        <article class="gallery-card big">
+          <div class="photo photo-1"></div>
+          <div>
+            <span>Interior</span>
+            <h3>Warm lights & soft corners</h3>
+          </div>
+        </article>
+        <article class="gallery-card">
+          <div class="photo photo-2"></div>
+          <div>
+            <span>Terrace</span>
+            <h3>Golden hour seating</h3>
+          </div>
+        </article>
+        <article class="gallery-card">
+          <div class="photo photo-3"></div>
+          <div>
+            <span>Details</span>
+            <h3>Wood, brass & moon accents</h3>
+          </div>
+        </article>
+        <article class="gallery-card wide">
+          <div class="photo photo-4"></div>
+          <div>
+            <span>Counter</span>
+            <h3>Fresh pastries served daily</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section specials-section">
+      <div class="special-card">
+        <p class="eyebrow">Today’s favorite</p>
+        <h2>Honey Moon Latte</h2>
+        <p>Espresso, steamed milk, honey, cinnamon, and a soft caramel finish.</p>
+        <a href="#visit" class="text-link">Ask for today’s special</a>
+      </div>
+      <div class="special-visual">
+        <span>New</span>
+      </div>
+    </section>
+
+    <section id="reviews" class="section reviews-section">
+      <div class="section-heading">
+        <p class="eyebrow">Reviews</p>
+        <h2>People come for coffee, then stay for the feeling.</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“The most beautiful cozy spot for late coffee. The interior feels calm and premium.”</p>
+          <strong>Rama A.</strong>
+        </article>
+        <article class="review-card featured">
+          <div class="stars">★★★★★</div>
+          <p>“Their iced luna latte and chocolate cake are unreal. Everything looks so thoughtful.”</p>
+          <strong>Leen M.</strong>
+        </article>
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“Perfect for working, studying, or meeting a friend. Warm service and great coffee.”</p>
+          <strong>Omar H.</strong>
+        </article>
+      </div>
+    </section>
+
+    <section id="visit" class="section visit-section">
+      <div>
+        <p class="eyebrow">Visit us</p>
+        <h2>Amman, Jordan</h2>
+        <p>Open daily from 8 AM to 11 PM.</p>
+      </div>
+      <div class="visit-actions">
+        <a class="btn primary" href="https://wa.me/" target="_blank" rel="noreferrer">Order on WhatsApp</a>
+        <a class="btn ghost" href="https://maps.google.com" target="_blank" rel="noreferrer">Open Map</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/luna-logo.png" alt="" />
+    <p>© Luna Coffee House. Concept website by Koodly Web Studio.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
